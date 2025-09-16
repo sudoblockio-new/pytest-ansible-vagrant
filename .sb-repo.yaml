@@ -1,0 +1,5 @@
+name: pytest-ansible-vagrant
+description: pytest plugin for testing ansible roles against VMs with vagrant and returning a pytest-testinfra `host` object
+
+github:
+  visibility: public

@@ -1,0 +1,23 @@
+[project]
+name = "pytest-ansible-vagrant"
+version = "0.1.0"
+description = "pytest plugin for testing ansible playbooks against vagrant VMs"
+
+readme = "README.md"
+license = { file = "LICENSE" }
+
+dependencies = [
+  "pytest",
+  "ansible-runner",
+  "testinfra",
+]
+
+[project.entry-points.pytest11]
+sb-ansible-vagrant = "pytest_sb_ansible.vagrant"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pytest_ansible_vagrant"]
