@@ -9,8 +9,8 @@ from typing import TypedDict
 from testinfra import get_host
 from testinfra.host import Host
 
-from pytest_sb_ansible.ansible import run_playbook_on_host
-from pytest_sb_ansible.util import require_bins
+from pytest_ansible_vagrant.ansible import run_playbook_on_host
+from pytest_ansible_vagrant.util import require_bins
 
 
 def pytest_addoption(parser):
